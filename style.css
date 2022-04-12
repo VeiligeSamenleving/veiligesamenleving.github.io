@@ -24,12 +24,12 @@ body {
 
 .blokje{
     background-color: rgba(39, 200, 245, 0.5);
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
     border-top: 5px solid #1C6EA4;
     border-radius: 1px;
-    border-color: rgba(39, 150, 255, 1)
+    border-color: rgba(39, 150, 255, 1);
 }
 
 a, a:visited, a:hover, a:active {
