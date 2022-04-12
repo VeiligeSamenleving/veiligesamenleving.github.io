@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   background-image: url("background.gif");
+  background-size: 100%;
 }
 
 *, *:before, *:after {
@@ -23,15 +24,21 @@ body {
 }
 
 .blokje{
-    background-color: rgba(39, 200, 245, 0.5);
+    background-color: rgba(150, 150, 150, 0.6);
     margin-top: 10%;
     margin-left: 25%;
     margin-right: 25%;
-    border-top: 5px solid #1C6EA4;
+    border-top: 8px solid #1C6EA4;
     border-radius: 1px;
-    border-color: rgba(39, 150, 255, 1);
+    border-spacing: 100px;
+    border-color: rgba(0, 0, 0, 1);
 }
 
+.tblokje{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
 a, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: none;
@@ -73,6 +80,7 @@ p {
   margin: 0 auto;
   background: #1e8449;
   color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 1);
 }
 .nav a {
   display: block;
@@ -88,12 +96,14 @@ p {
 .nav__menu-item {
   display: inline-block;
   position: relative;
+  background-color: rgba(0, 0, 0, 1);
 }
 .nav__menu-item:hover {
-  background-color: #34b7eb;
+  background-color: rgba(150, 150, 150, 1);
 }
 .nav__menu-item:hover .nav__submenu {
   display: block;
+  background-color: rgba(150, 150, 150, 1);
 }
 .nav__submenu {
   font-weight: 300;
@@ -101,8 +111,13 @@ p {
   display: none;
   position: absolute;
   width: 220px;
-  background-color: #00bbff;
+  background-color:rgba(0, 0, 0, 1);
 }
+
+.nav__submenu-item {
+  background: rgba(0, 0, 0, 1);
+}
+
 .nav__submenu-item:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(150, 150, 150, 1);
 }
