@@ -4,6 +4,7 @@ html {
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: bottom;
 }
 
 *, *:before, *:after {
@@ -19,9 +20,8 @@ body {
 }
 
 .cijfers{
-    margin-top: 55px;
-    position: absolute;
-    height: 92.6%;
+    position: fixed;
+    height: 100%;
     border: none;
     width: 100%;
     margin-bottom: 0px;
@@ -37,6 +37,7 @@ body {
     border-radius: 1px;
     border-spacing: 100px;
     border-color: rgba(0, 0, 0, 1);
+    margin-bottom: 10%;
 }
 
 .tblokje{
@@ -81,8 +82,11 @@ p {
 }
 
 .nav {
-  position: fixed;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
+  overflow: hidden;
   width: 100%;
   margin: 0 auto;
   background: #1e8449;
@@ -115,8 +119,8 @@ p {
 .nav__submenu {
   font-weight: 300;
   text-transform: none;
+  position: fixed;
   display: none;
-  position: absolute;
   width: 220px;
   background-color:rgba(0, 0, 0, 1);
 }
